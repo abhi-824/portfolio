@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    line-height: 1.6;
+    overflow: auto;
+}
+.main-header a{
+    text-decoration: none;
+    color:#fff;
+}
+.logo h1{
+    padding:1rem 2rem;
+    font-size:3rem;
+}
+.curr{
+    line-height: 2rem;
+    padding-bottom:0.5rem;
+    border-bottom: 3px solid yellow;
+}
+.menu a:hover{
+    line-height: 2rem;
+    
+    border-bottom: 3px solid white;
+    transition: 0.5s;
+
+}
+.main-header{
+    height:100vh;
+    background:url('../images/joshua-earle-EqztQX9btrE-unsplash.jpg') no-repeat center center/cover;
+    color:#fff;
+}
+nav{
+    position:sticky;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display:inline-block;
+    padding:1rem 2rem;
+}
+.menu ul li a{
+    padding-bottom:0.5rem;
+
+}
+.main-info{
+    display:flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-info h1{
+    font-size:3rem;
+}
+.main-info p{
+    font-size:1.5rem;
+}
+.btn{
+    padding:1rem 2rem;
+    background:#fff;
+    margin-top:1rem;
+    color:#333;
+}
+.btn:hover{
+    background: rgba(233, 230, 42, 0.692);
+    color:#fff;
+}
+.main-info a{
+    color:#333;
+}
