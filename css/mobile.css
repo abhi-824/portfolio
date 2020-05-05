@@ -10,7 +10,10 @@
     justify-content: space-between;
     align-items: center;
     background:url('../images/joshua-earle-EqztQX9btrE-unsplash.jpg') no-repeat center center/cover;
-
+}
+.menu ul li{
+    font-size: 1rem;
+    padding:0.3rem 1rem;
 }
 .main-header{
     height:auto;
