@@ -24,6 +24,12 @@ nav .navbar .logo h1{
     font-size:3rem;
     font-family: "Audiowide"!important;
 }
+nav .navbar-2 .logo h1{
+    padding:1rem 2rem;
+    font-size:3rem;
+    color:#fff;
+    font-family: "Audiowide"!important;
+}
 a{
     color:#fff; 
     text-decoration: none;
@@ -34,7 +40,12 @@ a{
     border-bottom: 3px solid yellow;
 }
 .menu a:hover{
+    transition: 1s;;
     border-bottom: 3px solid white;
+    
+}
+nav{
+    position:sticky;
 
 }
 .main-header{
@@ -42,12 +53,15 @@ a{
     background:url('../images/joshua-earle-EqztQX9btrE-unsplash.jpg') no-repeat center center/cover;
     color:#fff;
 }
-nav{
-    position:sticky;
-}
 .navbar{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+}
+.navbar-2{
+    display:flex;
+    justify-content: space-between;
+    background:url('../images/joshua-earle-EqztQX9btrE-unsplash.jpg') no-repeat ;
     align-items: center;
 }
 .menu ul{
@@ -94,6 +108,12 @@ nav{
     font-family: "PT Sans Narrow", sans-serif;
 }
 .special p{
+
+}
+.sec-title{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 200;
+    padding:1rem ;
 
 }
 .cial{
@@ -167,6 +187,11 @@ nav{
     font-family: "PT Sans Narrow", sans-serif;
     font-size:1rem;
     padding:0rem 1rem;
+}
+.sec-subtitle{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size:1rem;
+    padding-top:1rem;
 }
 .title{
     width:100%;
@@ -251,3 +276,4 @@ footer{
     background:rgb(255, 166, 1);
 
 }
+@media(max)

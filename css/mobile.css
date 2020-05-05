@@ -1,0 +1,57 @@
+.navbar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header{
+    height:auto;
+}
+.main-info{
+    display: none;
+}
+.sec-subtitle{
+    font-size:1.3rem;
+}
+.boxes{
+    padding:1rem;
+    margin:1rem 0rem;
+    display: block;
+    font-size:0.9rem;
+}
+.box1{
+    margin:1rem 0rem;
+}
+.box2{
+    margin:1rem 0rem;
+}
+.box3{
+    margin:1rem 0rem;
+}
+.box4{
+    margin:1rem 0rem;
+}
+.icons{
+    display:block;
+    text-align: center;
+    font-weight:400;
+    height:100%;
+    font-size:1.3rem;
+    background:rgb(194, 190, 190);
+}
+.icons div{
+    padding:1rem 0rem;
+}
+.house{
+    width:100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+.house div{
+    padding:1rem 0rem;
+}
+.footer-main{
+    display: flex;
+    flex-direction: column;
+}
