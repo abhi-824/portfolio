@@ -276,4 +276,64 @@ footer{
     background:rgb(255, 166, 1);
 
 }
-@media(max)
+/* Contact */
+.contact{
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.forms{
+    padding:1rem 2rem;
+}
+.bhar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+input{
+    height:2rem;
+    padding:1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.teri
+{
+    grid-column: 1/span 2;
+}
+.bttn{
+    padding:4rem;
+}
+button:hover{
+    background: rgb(245, 191, 43);
+    transition:1s;
+    cursor:pointer ;
+}
+button{
+    background: #333;
+    width:50vw;
+    color:#fff;
+    padding:1rem;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    background:#333;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: honeydew;
+    padding:2rem;
+}
+.aa h2{
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.aa p{
+    font-weight: 200;
+}
