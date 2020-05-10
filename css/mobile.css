@@ -88,8 +88,11 @@ textarea{
 .imaa{
     margin: 1rem 0rem;
 }
+#time-travel ul li div{
+    width:200px;
+}
 #time-travel ul li:nth-child(even) div{
-    right:40px;
+    left:-230px;
 }
 #time-travel ul li:nth-child(odd) div{
     right:40px;
