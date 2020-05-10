@@ -82,3 +82,15 @@ textarea{
 .images{
     display:block;
 }
+.main-head{
+    display:block;
+}
+.imaa{
+    margin: 1rem 0rem;
+}
+#time-travel ul li:nth-child(even) div{
+    right:40px;
+}
+#time-travel ul li:nth-child(odd) div{
+    right:40px;
+}
