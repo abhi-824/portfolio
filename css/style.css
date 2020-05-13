@@ -471,7 +471,7 @@ button{
     width:100%;
 }
 .text{
-    background: rgb(214, 214, 214);
+    /*background: rgb(214, 214, 214);*/
     height:100%;
     border-left: 6px solid rgb(255, 194, 62);
 }
