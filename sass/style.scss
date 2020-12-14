@@ -1,0 +1,175 @@
+$primaryColor: red;
+$timeColor: rgb(54, 175, 64);
+$realityColor: rgb(175, 98, 54);
+$mindColor: rgb(157, 175, 54);
+$soulColor: rgb(175, 68, 54);
+$powerColor: rgb(175, 54, 165);
+$spaceColor: rgb(56, 54, 175);
+
+@import "./arc_reactor";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: url("../images/black_bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.main-header {
+  @include flexCenter();
+  min-height: 100vh;
+  .content {
+    h1 {
+      font-size: 2rem;
+      line-height: 0.5rem;
+      padding: 1rem;
+      margin: 0;
+      font-weight: 900;
+    }
+    margin-right: 12rem;
+  }
+  .scrollDown {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    cursor: pointer;
+    bottom: 5%;
+    transition: 0.3s;
+    display: flex;
+
+    &:hover {
+      transform: translateY(-40%);
+    }
+  }
+}
+.hidden {
+  display: none !important;
+}
+.projects {
+  @include flexCenter();
+  position: relative;
+  min-height:100vh ;
+  flex-direction: column;
+  h1 {
+      
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .heading{
+    position: absolute;
+    left:5%;
+    top:10px;
+  }
+  .main-projects {
+    @include flexCenter();
+    .stones {
+      @include flexCenter();
+      width: 100%;
+    }
+    img {
+      cursor: pointer;
+      animation: rotate 10s infinite ease-in-out;
+      transition: 1s;
+      width: 30px;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+    .space {
+      transition: 0.5s;
+      filter: drop-shadow(5px 5px 5px $spaceColor);
+      &:hover {
+        img {
+          filter: drop-shadow(15px 15px 15px $spaceColor);
+        }
+      }
+    }
+    .power {
+      transition: 0.5s;
+      filter: drop-shadow(5px 5px 5px $powerColor);
+      &:hover {
+        img {
+          filter: drop-shadow(15px 15px 15px $powerColor);
+        }
+      }
+    }
+    .mind {
+      transition: 0.5s;
+      filter: drop-shadow(5px 5px 5px $mindColor);
+      &:hover {
+        img {
+          filter: drop-shadow(15px 15px 15px $mindColor);
+        }
+      }
+    }
+    .time {
+      transition: 0.5s;
+      filter: drop-shadow(5px 5px 5px $timeColor);
+      &:hover {
+        img {
+          filter: drop-shadow(15px 15px 15px $timeColor);
+        }
+      }
+    }
+    .soul {
+      transition: 0.5s;
+      filter: drop-shadow(5px 5px 5px $soulColor);
+      &:hover {
+        img {
+          filter: drop-shadow(15px 15px 15px $soulColor);
+        }
+      }
+    }
+    .reality {
+      transition: 0.5s;
+      filter: drop-shadow(5px 5px 5px $realityColor);
+      &:hover {
+        img {
+          filter: drop-shadow(15px 15px 15px $realityColor);
+        }
+      }
+    }
+    .scrollDown2{
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      right: 50%;
+      cursor: pointer;
+      bottom: 0%;
+      transition: 0.3s;
+      display: flex;
+
+      &:hover {
+        transform: translateY(-40%);
+      }
+    }
+  }
+}
+.contactMe{
+  h1 {
+    font-size: 2rem;
+    line-height: 0.5rem;
+    padding: 1rem;
+    margin: 0;
+    font-weight: 900;
+  }
+}
