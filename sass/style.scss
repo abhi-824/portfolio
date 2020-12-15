@@ -8,6 +8,7 @@ $spaceColor: rgb(56, 54, 175);
 
 @import "./arc_reactor";
 @import "./btn";
+@import "./tabs_skills";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700;800&display=swap");
 * {
   margin: 0;
@@ -212,6 +213,52 @@ body {
     }
     a:hover {
       filter: drop-shadow(5px 5px 5px $realityColor);
+    }
+  }
+}
+.skills{
+  @include flexCenter();
+  flex-direction: column;
+  justify-content: end;
+  font-weight: 600;
+  position: relative;
+  .card{
+    width:300px;
+    height: 300px; 
+  }
+  .cards{
+    @include flexCenter();
+    grid-gap: 1rem;
+    
+  }
+  .card-reveal{
+    width:300px;
+    height: 400px;  
+  }
+  h1,h2{
+
+    font-size: 2rem; 
+    line-height: 0.5rem;
+    padding: 1.5rem;
+    margin: 0;
+    font-weight: 900;
+  }
+  .tabbed-component__button{
+    width: max-content;
+    padding:0.3rem;
+  }
+  .scrollDown3 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    cursor: pointer;
+    bottom: 5%;
+    transition: 0.3s;
+    display: flex;
+
+    &:hover {
+      transform: translateY(-40%);
     }
   }
 }
