@@ -3,190 +3,264 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhinandan's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/style.css" />
+    <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
-      media="screen and (max-width: 768px)"
-      href="css/mobile.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/141974084f.js"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
       crossorigin="anonymous"
-    ></script>
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
-    <div class="main-header">
-      <nav>
-        <div class="navbar">
-          <div class="logo">
-            <h1>ABDUDE</h1>
-          </div>
-          <div class="menu">
-            <ul>
-              <li><a href="index.html" class="curr">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="work.html">WORK</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-          </div>
+    <!-- Header -->
+    <div class="fullpage-wrapper">
+      <div class="reactor-container">
+        <div class="reactor-container-inner circle abs-center"></div>
+        <div class="tunnel circle abs-center"></div>
+        <div class="core-wrapper circle abs-center"></div>
+        <div class="core-outer circle abs-center"></div>
+        <div class="core-inner circle abs-center"></div>
+        <div class="coil-container">
+          <div class="coil coil-1"></div>
+          <div class="coil coil-2"></div>
+          <div class="coil coil-3"></div>
+          <div class="coil coil-4"></div>
+          <div class="coil coil-5"></div>
+          <div class="coil coil-6"></div>
+          <div class="coil coil-7"></div>
+          <div class="coil coil-8"></div>
         </div>
-      </nav>
-      <div class="main-info">
-        <h1>
-          I am Abhinandan,
-          <span
-            class="txt-type"
-            data-wait="1000"
-            data-words='["Web Developer","UI/UX Designer","Blogger","Competitive Programmer"]'
-          ></span>
-        </h1>
-        <p>I spcialize in learning anything very fast</p>
-        <a href="work.html" class="btn">View My Work</a>
       </div>
-    </div>
-    <div class="special">
-      <h1 class="sec-title">I SPE<span class="cial">CIAL</span>IZE IN</h1>
-      <p class="sec-subtitle">
-        Competitive Coding and designing and maintaining crazy websites
-      </p>
-      <div class="boxes">
-        <div class="box1">
-          <i class="fas fa-cubes fa-3x"></i>
-          <h2>Project Building</h2>
-          <p>
-            I believe that I am a good project buileder and I have some projects
-            which you might like.
-          </p>
+      <div class="main-header">
+        <div class="content">
+          <h1>HEY THERE!</h1>
+          <br />
+          <h1>I AM ABHINANDAN SHARMA!</h1>
+          <br />
+          <h1>
+            I am a
+            <span
+              class="txt-type"
+              data-wait="1000"
+              data-words='["Web Developer","UI/UX Designer","Blogger"]'
+            ></span>
+          </h1>
         </div>
-        <div class="box2">
-          <i class="fas fa-code fa-3x"></i>
-          <h2>COMPETITIVE CODING</h2>
-          <p>
-            Codechef: 4 stars(Max)<br />Codeforces:Specialist(Max)<br />Google
-            Kickstart Min Rank:2100
-          </p>
-        </div>
-        <div class="box3">
-          <i class="fab fa-python fa-3x"></i>
-          <h2>Web Development</h2>
-          <p>
-            Have developed various projects(See work section) with use of
-            Javascript addressing real life problems
-          </p>
-        </div>
-        <div class="box4">
-          <i class="fas fa-pen-fancy fa-3x"></i>
-          <h2>BLOGGING</h2>
-          <p>
-            See my Blog:
-            <a href="http://coddiction.blogspot.com" class="link-hai">here</a
-            ><br />
-            Here I write about Data Structures and Algorithms, and in general,
-            life.
-          </p>
+        <div class="scrollDown">
+          <a href="#projects">
+            <i class="material-icons scroll">keyboard_arrow_down</i>
+          </a>
         </div>
       </div>
     </div>
-    <div class="wor">
-      <div class="title">
-        <h1 class="sec-title">MY<span class="cial"> WOR</span>K</h1>
-        <p class="sec-subtitle">
-          Check Out some of My Achievments and Projects
-        </p>
-      </div>
-      <div class="images">
-        <div class="box">
-          <div class="box1">
-            <img src="images/work/gameofcodes.PNG" alt="" />
+    <!-- Projects -->
+    <div class="fullpage-wrapper projects" id="projects">
+      <h1 class="heading">My Key Stones</h1>
+      <div class="main-projects">
+        <div class="stones">
+          <div class="space goc_stn">
+            <img src="images/space.png" alt="" />
           </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="itm-title">Game Of Codes</p>
-              <p class="itm-subtitlee">
-                <a class="arrow-link">See more<span class="arrow"></span></a>
-              </p>
-            </div>
+          <div class="time codekaksha_stn">
+            <img src="images/time.png" alt="" />
+          </div>
+          <div class="mind blogger_stn">
+            <img src="images/mind.png" alt="" />
+          </div>
+          <div class="soul brainTeaser_stn">
+            <img src="images/soul.png" alt="" />
+          </div>
+          <div class="reality collegeGlance_stn">
+            <img src="images/reality.png" alt="" />
+          </div>
+          <div class="power competitiveProgramming_stn">
+            <img src="images/power.png" alt="" />
           </div>
         </div>
+        <div class="descriptionOfProject">
+          <div class="gameofcodes">
+            <h1>Game Of Codes</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
+              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
+              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
+              deleniti! Saepe, necessitatibus velit?
+            </p>
+            <iframe
+              width="600"
+              height="250"
+              src="https://www.youtube.com/embed/YuQeYr8NDRU"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="codekaksha hidden">
+            <h1>CodeKaksha</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
+              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
+              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
+              deleniti! Saepe, necessitatibus velit?
+            </p>
+            <iframe
+              width="600"
+              height="250"
+              src="https://www.youtube.com/embed/mep4y7Y8v4k"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="blogger hidden">
+            <h1>Coddiction</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
+              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
+              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
+              deleniti! Saepe, necessitatibus velit?
+            </p>
+            <iframe
+              width="600"
+              height="250"
+              src="https://www.youtube.com/embed/mep4y7Y8v4k"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="brainTeaser hidden">
+            <h1>Brain Teaser</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
+              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
+              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
+              deleniti! Saepe, necessitatibus velit?
+            </p>
+            <iframe
+              width="600"
+              height="250"
+              src="https://www.youtube.com/embed/mep4y7Y8v4k"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="college_glance hidden">
+            <h1>College Glance</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
+              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
+              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
+              deleniti! Saepe, necessitatibus velit?
+            </p>
+            <iframe
+              width="600"
+              height="250"
+              src="https://www.youtube.com/embed/mep4y7Y8v4k"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="competitive hidden">
+            <h1>Competitive Programming</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
+              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
+              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
+              deleniti! Saepe, necessitatibus velit?
+            </p>
+            <iframe
+              width="600"
+              height="250"
+              src="https://www.youtube.com/embed/mep4y7Y8v4k"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="scrollDown2">
+          <a href="#skills">
+            <i class="material-icons scroll">keyboard_arrow_down</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="fullpage-wrapper skills" id="skills">
+      <h1>My Skills</h1>
+      <div class="scrollDown">
+        <a href="#contact">
+          <i class="material-icons scroll">keyboard_arrow_down</i>
+        </a>
+      </div>
+    </div>
 
-       
-        <div class="box">
-            <div class="box1">
-              <img src="images/work/codekaksha.PNG" alt="" />
-            </div>
-            <div class="text">
-              <div class="text-wrap">
-                <p class="itm-title">CodeKaksha</p>
-                <p class="itm-subtitlee">
-                  <a class="arrow-link">See more<span class="arrow"></span></a>
-                </p>
-              </div>
-            </div>
+    <!-- contact -->
+    <div class="fullpage-wrapper contactMe" id="contact">
+      <h1>Let's get Great Together!</h1>
+      <form action="https://formspree.io/f/xleopzln" method="POST">
+        <div class="input-field inline" style="width: 100%">
+          <input type="text" name="name" class="name" />
+          <label for="name">Name</label>
         </div>
-        
-        <div class="box">
-            <div class="box1">
-              <img src="images/work/brainTeaser.PNG" alt="" />
-            </div>
-            <div class="text">
-              <div class="text-wrap">
-                <p class="itm-title">BrainTeaser</p>
-                <p class="itm-subtitlee">
-                  <a class="arrow-link">See more<span class="arrow"></span></a>
-                </p>
-              </div>
-            </div>
+        <div class="input-field inline" style="width: 100%">
+          <input type="email" name="_replyto" class="email" />
+          <label for="_replyto">Email</label>
         </div>
-        <div class="box">
-            <div class="box1">
-              <img src="images/work/blog.PNG" alt="" />
-            </div>
-            <div class="text">
-              <div class="text-wrap">
-                <p class="itm-title">Blogging with Coffee</p>
-                <p class="itm-subtitlee">
-                  <a class="arrow-link">See more<span class="arrow"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        <div class="box">
-            <div class="box1">
-              <img src="images/work/brainTeaser.PNG" alt="" />
-            </div>
-            <div class="text">
-              <div class="text-wrap">
-                <p class="itm-title">CollegeGlance</p>
-                <p class="itm-subtitlee">
-                  <a class="arrow-link">See more<span class="arrow"></span></a>
-                </p>
-              </div>
-            </div>
+        <div class="input-field inline" style="width: 100%">
+          <input type="text" name="message" class="message" />
+          <label for="message">Message</label>
         </div>
-      </div>
-      
+        <input
+          type="submit"
+          value="Send"
+          class="submit angled-gradient-button"
+        />
+      </form>
+      <footer>
+        <a href="https://github.com/abhi-824" target="_blank">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/abhinandan-sharma-0a2633175/" target="_blank">
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="//www.facebook.com/abhinandan.sharma.1042032" target="_blank">
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="abhi.moudgil15@gmail.com" target="_blank">
+          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+        </a>
+      </footer>
     </div>
-    <footer>
-      <div class="footer-main">
-        <div class="kaatil">
-          <a href="//www.facebook.com/abhinandan.sharma.1042032" target="_blank"
-            ><i class="fab fa-facebook fa-2x"></i
-          ></a>
-          <a href="https://github.com/abhi-824" target="_blank"
-            ><i class="fab fa-github fa-2x"></i
-          ></a>
-          <a href="https://www.instagram.com/ab_dude824/" taret="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/abhinandan-sharma-0a2633175/"
-            taret="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>

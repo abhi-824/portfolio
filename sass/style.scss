@@ -7,13 +7,14 @@ $powerColor: rgb(175, 54, 165);
 $spaceColor: rgb(56, 54, 175);
 
 @import "./arc_reactor";
+@import "./btn";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 @mixin flexCenter {
@@ -28,6 +29,10 @@ body {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .main-header {
   @include flexCenter();
   min-height: 100vh;
@@ -62,23 +67,28 @@ body {
 .projects {
   @include flexCenter();
   position: relative;
-  min-height:100vh ;
+  min-height: 100vh;
   flex-direction: column;
   h1 {
-      
     font-size: 2rem;
     font-weight: 900;
   }
-  .heading{
+  .heading {
     position: absolute;
-    left:5%;
-    top:10px;
+    left: 5%;
+    top: 10px;
   }
   .main-projects {
     @include flexCenter();
     .stones {
       @include flexCenter();
-      width: 100%;
+      min-width: 500px;
+      min-height: 500px;
+
+      position: relative;
+      div {
+        position: absolute;
+      }
     }
     img {
       cursor: pointer;
@@ -96,6 +106,10 @@ body {
     }
     .space {
       transition: 0.5s;
+
+      top: 139px;
+      right: 220px;
+
       filter: drop-shadow(5px 5px 5px $spaceColor);
       &:hover {
         img {
@@ -105,6 +119,8 @@ body {
     }
     .power {
       transition: 0.5s;
+      top: 139px;
+      right: 170px;
       filter: drop-shadow(5px 5px 5px $powerColor);
       &:hover {
         img {
@@ -113,6 +129,8 @@ body {
       }
     }
     .mind {
+      top: 240px;
+      right: 235px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $mindColor);
       &:hover {
@@ -122,6 +140,8 @@ body {
       }
     }
     .time {
+      bottom: 272px;
+      left: 93px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $timeColor);
       &:hover {
@@ -131,6 +151,8 @@ body {
       }
     }
     .soul {
+      top: 139px;
+      right: 318px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $soulColor);
       &:hover {
@@ -140,6 +162,8 @@ body {
       }
     }
     .reality {
+      top: 139px;
+      right: 265px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $realityColor);
       &:hover {
@@ -148,7 +172,7 @@ body {
         }
       }
     }
-    .scrollDown2{
+    .scrollDown2 {
       position: absolute;
       justify-content: center;
       align-items: center;
@@ -163,13 +187,31 @@ body {
       }
     }
   }
-}
-.contactMe{
+} 
+.contactMe {
+  @include flexCenter();
+  flex-direction: column;
+  justify-content: space-evenly;
+  input {
+    color: #fff;
+  }
   h1 {
     font-size: 2rem;
     line-height: 0.5rem;
     padding: 1rem;
     margin: 0;
     font-weight: 900;
+  }
+  footer {
+    width: 100%;
+    @include flexCenter();
+    justify-content: space-evenly;
+    a {
+      color: #fff;
+      transition: 0.5s;
+    }
+    a:hover {
+      filter: drop-shadow(5px 5px 5px $realityColor);
+    }
   }
 }

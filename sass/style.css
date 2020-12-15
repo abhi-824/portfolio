@@ -8,6 +8,15 @@
   display: flex;
 }
 
+.fullpage-wrapper2 {
+  width: 100%;
+  min-height: 10vh;
+  background: radial-gradient(#353c44, #222931);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .reactor-container {
   width: 300px;
   height: 300px;
@@ -161,6 +170,40 @@
   }
 }
 
+.angled-gradient-button {
+  background-size: 220%;
+  -webkit-box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+  color: #52fefe;
+  background-color: transparent;
+  background-position: 100%;
+  border: 3px solid #52fefe;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 3px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  font-weight: 900;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-image: linear-gradient(110deg, #52fefe 0%, #52fefe 50%, transparent 50%, transparent 100%);
+  font-size: 14px;
+}
+
+.angled-gradient-button:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+  background-position: 0;
+  color: #333;
+}
+
+.angled-gradient-button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -178,6 +221,10 @@ body {
   background-attachment: fixed;
   font-family: "Poppins", sans-serif;
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .main-header {
@@ -283,7 +330,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  min-width: 500px;
+  min-height: 500px;
+  position: relative;
+}
+
+.projects .main-projects .stones div {
+  position: absolute;
 }
 
 .projects .main-projects img {
@@ -320,6 +373,8 @@ body {
 .projects .main-projects .space {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  top: 139px;
+  right: 220px;
   -webkit-filter: drop-shadow(5px 5px 5px #3836af);
           filter: drop-shadow(5px 5px 5px #3836af);
 }
@@ -332,6 +387,8 @@ body {
 .projects .main-projects .power {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  top: 139px;
+  right: 170px;
   -webkit-filter: drop-shadow(5px 5px 5px #af36a5);
           filter: drop-shadow(5px 5px 5px #af36a5);
 }
@@ -342,6 +399,8 @@ body {
 }
 
 .projects .main-projects .mind {
+  top: 240px;
+  right: 235px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-filter: drop-shadow(5px 5px 5px #9daf36);
@@ -354,6 +413,8 @@ body {
 }
 
 .projects .main-projects .time {
+  bottom: 272px;
+  left: 93px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-filter: drop-shadow(5px 5px 5px #36af40);
@@ -366,6 +427,8 @@ body {
 }
 
 .projects .main-projects .soul {
+  top: 139px;
+  right: 318px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-filter: drop-shadow(5px 5px 5px #af4436);
@@ -378,6 +441,8 @@ body {
 }
 
 .projects .main-projects .reality {
+  top: 139px;
+  right: 265px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-filter: drop-shadow(5px 5px 5px #af6236);
@@ -412,11 +477,61 @@ body {
           transform: translateY(-40%);
 }
 
+.contactMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactMe input {
+  color: #fff;
+}
+
 .contactMe h1 {
   font-size: 2rem;
   line-height: 0.5rem;
   padding: 1rem;
   margin: 0;
   font-weight: 900;
+}
+
+.contactMe footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactMe footer a {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactMe footer a:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #af6236);
+          filter: drop-shadow(5px 5px 5px #af6236);
 }
 /*# sourceMappingURL=style.css.map */
