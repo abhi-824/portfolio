@@ -642,6 +642,14 @@ iframe {
   position: relative;
 }
 
+.skills .card-title {
+  font-weight: 900 !important;
+}
+
+.skills .card-reveal p {
+  color: #333 !important;
+}
+
 .skills .card {
   width: 300px;
   height: 300px;

@@ -250,6 +250,16 @@ iframe{
   justify-content: end;
   font-weight: 600;
   position: relative;
+  .card-title{
+    font-weight: 900!important;
+  }
+  .card-reveal{
+    p{
+
+      color:#333!important;
+    }
+    
+  }
   .card {
     width: 300px;
     height: 300px;
