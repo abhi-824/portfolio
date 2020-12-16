@@ -587,9 +587,38 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.contactMe .scrollDown3 {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0%;
+  cursor: pointer;
+  bottom: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactMe .scrollDown3 a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactMe .scrollDown3 a:hover {
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
 }
 
 .contactMe input {

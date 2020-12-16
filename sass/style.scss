@@ -224,6 +224,23 @@ iframe {
 .contactMe {
   @include flexCenter();
   flex-direction: column;
+  position: relative;
+  .scrollDown3 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    cursor: pointer;
+    bottom: 5%;
+    transition: 0.3s;
+    display: flex;
+    a {
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-40%);
+      }
+    }
+  }
   justify-content: space-evenly;
   input {
     color: #fff;
