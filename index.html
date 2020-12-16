@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="sass/style.css" />
-    <link rel="stylesheet" href="sass/tabs_skills.css">
-    <link rel="stylesheet" href="sass/btn.css">
+    <link rel="stylesheet" href="sass/tabs_skills.css" />
+    <link rel="stylesheet" href="sass/btn.css" />
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -72,7 +72,27 @@
     <div class="fullpage-wrapper projects" id="projects">
       <h1 class="heading">My Key Stones</h1>
       <div class="main-projects">
-        <div class="stones">
+        <div class="carousel">
+          <div class="carousel-item space goc_stn">
+            <img src="images/space.png" />
+          </div>
+          <div class="carousel-item time codekaksha_stn">
+            <img src="images/time.png" />
+          </div>
+          <div class="carousel-item mind blogger_stn">
+            <img src="images/mind.png" />
+          </div>
+          <div class="carousel-item soul brainTeaser_stn">
+            <img src="images/soul.png" />
+          </div>
+          <div class="carousel-item reality collegeGlance_stn">
+            <img src="images/reality.png" />
+          </div>
+          <div class="carousel-item power competitiveProgramming_stn">
+            <img src="images/power.png" />
+          </div>
+        </div>
+        <!-- <div class="stones">
           <div class="space goc_stn">
             <img src="images/space.png" alt="" />
           </div>
@@ -91,17 +111,22 @@
           <div class="power competitiveProgramming_stn">
             <img src="images/power.png" alt="" />
           </div>
-        </div>
+        </div> -->
         <div class="descriptionOfProject">
           <div class="gameofcodes">
-            <h1>Game Of Codes</h1>
+            <h1>
+              <a href="https://gameofcodes.herokuapp.com" target="_blank"
+                >Game Of Codes</a
+              >
+            </h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
-              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
-              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
-              deleniti! Saepe, necessitatibus velit?
+              Developed using Codeforces API, this one-of-its-kind tool is all
+              about Competitive Programming, be it practicing, analysing,
+              learning, or even doing contests with your friends! This is a full
+              in one package for codeforces lovers, and have
+              <bold>1000+</bold> users registered and growing. <br />
+              Tech Stack Used: HTML | CSS | JS | FIREBASE | WEBSOCKETS | <br />
+              See the demo here: <br />
             </p>
             <iframe
               width="600"
@@ -113,14 +138,16 @@
             ></iframe>
           </div>
           <div class="codekaksha hidden">
-            <h1>CodeKaksha</h1>
+            <h1><a href="https://codekaksha.herokuapp.com">CodeKaksha</a></h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
-              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
-              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
-              deleniti! Saepe, necessitatibus velit?
+              Developed using SocketIO, WebRTC, and Jdoodle API, this
+              multi-utility web app can be used to host interactive coding
+              sessions/interviews/classes with the help of a real-time
+              collaborative whiteboard and code editor, and video conferencing.
+              <br />
+              TechStack Used: HTML, CSS, JavaScript, Firebase, WebRTC, SocketIO.
+              <br />
+              See live Demo here:
             </p>
             <iframe
               width="600"
@@ -134,12 +161,9 @@
           <div class="blogger hidden">
             <h1>Coddiction</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              facilis, sed ab sequi amet doloribus libero nostrum totam! Impedit
-              quod beatae quo iusto nam ducimus saepe iure tempora voluptas
-              nobis?lore20 Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Cumque, at. Quasi totam odio consectetur cumque dolor
-              deleniti! Saepe, necessitatibus velit?
+              So, everybody needs a hobby, and here is mine, Blogging! Powered
+              by blogger, you can find posts related to Data Structures and
+              Algorithms, Life hacks, philosophical, and college life.
             </p>
             <iframe
               width="600"
@@ -250,248 +274,420 @@
             <div class="cards">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/work/gameofcodes.PNG">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/work/gameofcodes.PNG">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/work/gameofcodes.PNG">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
               </div>
-              
             </div>
           </div>
           <div class="tabbed-component__section" id="section-2">
             <h2>Back End</h2>
-            <p>
-              <div class="cards">
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+            <p></p>
+            <div class="cards">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
                 </div>
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
-                
               </div>
-            </p>
-          </div>  
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="tabbed-component__section" id="section-3">
             <h2>Competitive Programming</h2>
             <div class="cards">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/work/gameofcodes.PNG">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/work/gameofcodes.PNG">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/work/gameofcodes.PNG">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
               </div>
-              
             </div>
           </div>
 
           <div class="tabbed-component__section" id="section-4">
             <h2>Blogger</h2>
-            <p>
-              <div class="cards">
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+            <p></p>
+            <div class="cards">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
                 </div>
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
-                
               </div>
-            </p>
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="tabbed-component__section" id="section-5">
             <h2>Flutter</h2>
-            <p>
-              <div class="cards">
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+            <p></p>
+            <div class="cards">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
                 </div>
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
                 </div>
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/work/gameofcodes.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi molestiae placeat cum esse error magnam, qui quos. Iste sequi iure assumenda quae velit dolores rem et quidem quasi nisi.
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
                 </div>
-                
               </div>
-            </p>
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/work/gameofcodes.PNG" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"
+                    >Card Title<i class="material-icons right"
+                      >more_vert</i
+                    ></span
+                  >
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"
+                    >Card Title<i class="material-icons right">close</i></span
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  eligendi molestiae placeat cum esse error magnam, qui quos.
+                  Iste sequi iure assumenda quae velit dolores rem et quidem
+                  quasi nisi.
+                  <p>
+                    Here is some more information about this product that is
+                    only revealed once clicked on.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -542,7 +738,6 @@
         </a>
       </footer>
     </div>
-
     <script src="js/main.js"></script>
   </body>
 </html>

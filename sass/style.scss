@@ -10,6 +10,7 @@ $spaceColor: rgb(56, 54, 175);
 @import "./btn";
 @import "./tabs_skills";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +66,7 @@ body {
 .hidden {
   display: none !important;
 }
+
 .projects {
   @include flexCenter();
   position: relative;
@@ -79,23 +81,39 @@ body {
     left: 5%;
     top: 10px;
   }
-  .main-projects {
-    @include flexCenter();
-    .stones {
-      @include flexCenter();
-      min-width: 500px;
-      min-height: 500px;
 
-      position: relative;
-      div {
-        position: absolute;
-      }
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+  .main-projects {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    height:70vh;
+    max-width:100vw;
+    .carousel{
+      
+        img{
+          width: 100px !important;;
+    
+        }
+      
+      // width:900px!importa  nt;
     }
+   
+    // .stones {
+    //   @include flexCenter();
+    //   min-width: 500px;
+    //   min-height: 500px;
+
+    //   position: relative;
+    //   div {
+    //     position: absolute;
+    //   }
+    // }
     img {
       cursor: pointer;
-      animation: rotate 10s infinite ease-in-out;
+      // an imation: rotate 10s infinite ease-in-out;
       transition: 1s;
-      width: 30px;
     }
     @keyframes rotate {
       from {
@@ -108,8 +126,8 @@ body {
     .space {
       transition: 0.5s;
 
-      top: 139px;
-      right: 220px;
+      // top: 139px;
+      // right: 220px;
 
       filter: drop-shadow(5px 5px 5px $spaceColor);
       &:hover {
@@ -120,8 +138,8 @@ body {
     }
     .power {
       transition: 0.5s;
-      top: 139px;
-      right: 170px;
+      // top: 139px;
+      // right: 170px;
       filter: drop-shadow(5px 5px 5px $powerColor);
       &:hover {
         img {
@@ -130,8 +148,8 @@ body {
       }
     }
     .mind {
-      top: 240px;
-      right: 235px;
+      // top: 240px;
+      // right: 235px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $mindColor);
       &:hover {
@@ -141,8 +159,8 @@ body {
       }
     }
     .time {
-      bottom: 272px;
-      left: 93px;
+      // bottom: 272px;
+      // left: 93px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $timeColor);
       &:hover {
@@ -152,8 +170,8 @@ body {
       }
     }
     .soul {
-      top: 139px;
-      right: 318px;
+      // top: 139px;
+      // right: 318px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $soulColor);
       &:hover {
@@ -163,8 +181,8 @@ body {
       }
     }
     .reality {
-      top: 139px;
-      right: 265px;
+      // top: 139px;
+      // right: 265px;
       transition: 0.5s;
       filter: drop-shadow(5px 5px 5px $realityColor);
       &:hover {
@@ -188,7 +206,7 @@ body {
       }
     }
   }
-} 
+}
 .contactMe {
   @include flexCenter();
   flex-direction: column;
@@ -216,36 +234,35 @@ body {
     }
   }
 }
-.skills{
+.skills {
   @include flexCenter();
   flex-direction: column;
   justify-content: end;
   font-weight: 600;
   position: relative;
-  .card{
-    width:300px;
-    height: 300px; 
+  .card {
+    width: 300px;
+    height: 300px;
   }
-  .cards{
+  .cards {
     @include flexCenter();
     grid-gap: 1rem;
-    
   }
-  .card-reveal{
-    width:300px;
-    height: 400px;  
+  .card-reveal {
+    width: 300px;
+    height: 400px;
   }
-  h1,h2{
-
-    font-size: 2rem; 
+  h1,
+  h2 {
+    font-size: 2rem;
     line-height: 0.5rem;
     padding: 1.5rem;
     margin: 0;
     font-weight: 900;
   }
-  .tabbed-component__button{
+  .tabbed-component__button {
     width: max-content;
-    padding:0.3rem;
+    padding: 0.3rem;
   }
   .scrollDown3 {
     position: absolute;

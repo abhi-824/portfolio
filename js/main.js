@@ -74,6 +74,8 @@ function init() {
   const words = JSON.parse(txtElement.getAttribute("data-words"));
   const wait = txtElement.getAttribute("data-wait");
   // Init TypeWriter
+  var elems = document.querySelectorAll(".carousel");
+  var instances = M.Carousel.init(elems);
   new TypeWriter(txtElement, words, wait);
   stones();
 }
@@ -114,60 +116,60 @@ const rootComponentName = "tabbed-component";
 
 // define object storing classnames
 const classes = {
-    container: rootComponentName,
-    buttonList: `${rootComponentName}__list`,
-    buttonContainer: `${rootComponentName}__item`,
-    buttonActive: `${rootComponentName}__item--active`,
-    button: `${rootComponentName}__button`,
+  container: rootComponentName,
+  buttonList: `${rootComponentName}__list`,
+  buttonContainer: `${rootComponentName}__item`,
+  buttonActive: `${rootComponentName}__item--active`,
+  button: `${rootComponentName}__button`,
 
-    sectionContainer: `${rootComponentName}__container`,
-    section: `${rootComponentName}__section`,
-    sectionActive: `${rootComponentName}__section--active`
+  sectionContainer: `${rootComponentName}__container`,
+  section: `${rootComponentName}__section`,
+  sectionActive: `${rootComponentName}__section--active`,
 };
 
 // propagate event listener to button container to prevent x seperate functions to each of the buttons
 document
-    .querySelector(`.${classes.buttonList}`)
-    .addEventListener("click", (e) => {
-        // if the click event was on one of the buttons (not the container outside)
-        const el = e.target.closest(`.${classes.buttonContainer}`);
+  .querySelector(`.${classes.buttonList}`)
+  .addEventListener("click", (e) => {
+    // if the click event was on one of the buttons (not the container outside)
+    const el = e.target.closest(`.${classes.buttonContainer}`);
 
-        // return if something other than the button is clicked
-        if (!el) return;
+    // return if something other than the button is clicked
+    if (!el) return;
 
-        // store data in data-section="" html attribute
-        let id = el.dataset.section;
+    // store data in data-section="" html attribute
+    let id = el.dataset.section;
 
-        // return if tabbed selection already has the section
-        if (
-            document
-            .getElementById(`section-${id}`)
-            .classList.contains(classes.sectionActive)
-        )
-            return;
+    // return if tabbed selection already has the section
+    if (
+      document
+        .getElementById(`section-${id}`)
+        .classList.contains(classes.sectionActive)
+    )
+      return;
 
-        // query the DOM to find all buttons and remove active button
-        let buttons = document.querySelectorAll(`.${classes.buttonContainer}`);
-        removeClassFromNodeList(buttons, classes.buttonActive);
+    // query the DOM to find all buttons and remove active button
+    let buttons = document.querySelectorAll(`.${classes.buttonContainer}`);
+    removeClassFromNodeList(buttons, classes.buttonActive);
 
-        // add the active class to the new button from event
-        el.classList.toggle(classes.buttonActive);
+    // add the active class to the new button from event
+    el.classList.toggle(classes.buttonActive);
 
-        // store all sections in a node list
-        let sections = document.querySelectorAll(`.${classes.section}`);
-        removeClassFromNodeList(sections, classes.sectionActive);
+    // store all sections in a node list
+    let sections = document.querySelectorAll(`.${classes.section}`);
+    removeClassFromNodeList(sections, classes.sectionActive);
 
-        // add active class to section from dataset of button clicked
-        document
-            .getElementById(`section-${id}`)
-            .classList.add(classes.sectionActive);
+    // add active class to section from dataset of button clicked
+    document
+      .getElementById(`section-${id}`)
+      .classList.add(classes.sectionActive);
 
-        console.log(id);
-    });
+    console.log(id);
+  });
 
 // function to accept a nodelist and class, and  loop through the list to remove html class from all nodes
 const removeClassFromNodeList = (nodeList, className) => {
-    nodeList.forEach((cur) => {
-        cur.classList.remove(className);
-    });
-};  
+  nodeList.forEach((cur) => {
+    cur.classList.remove(className);
+  });
+};
