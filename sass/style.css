@@ -321,6 +321,27 @@ body {
   width: 0px;
 }
 
+.loader {
+  background: radial-gradient(#353c44, #222931);
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+iframe {
+  margin-top: 1rem;
+}
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
