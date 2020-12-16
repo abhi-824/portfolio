@@ -385,7 +385,12 @@ iframe {
   display: flex;
 }
 
-.main-header .scrollDown:hover {
+.main-header .scrollDown a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-header .scrollDown a:hover {
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
 }
@@ -558,7 +563,12 @@ iframe {
   display: flex;
 }
 
-.projects .main-projects .scrollDown2:hover {
+.projects .main-projects .scrollDown2 a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.projects .main-projects .scrollDown2 a:hover {
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
 }
@@ -707,7 +717,12 @@ iframe {
   display: flex;
 }
 
-.skills .scrollDown3:hover {
+.skills .scrollDown3 a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.skills .scrollDown3 a:hover {
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
 }

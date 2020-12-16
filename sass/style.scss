@@ -44,8 +44,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-iframe{
-  margin-top:1rem;
+iframe {
+  margin-top: 1rem;
 }
 .main-header {
   @include flexCenter();
@@ -69,9 +69,11 @@ iframe{
     bottom: 5%;
     transition: 0.3s;
     display: flex;
-
-    &:hover {
-      transform: translateY(-40%);
+    a {
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-40%);
+      }
     }
   }
 }
@@ -210,9 +212,11 @@ iframe{
       bottom: 0%;
       transition: 0.3s;
       display: flex;
-
-      &:hover {
-        transform: translateY(-40%);
+      a {
+        transition: 0.5s;
+        &:hover {
+          transform: translateY(-40%);
+        }
       }
     }
   }
@@ -250,15 +254,13 @@ iframe{
   justify-content: end;
   font-weight: 600;
   position: relative;
-  .card-title{
-    font-weight: 900!important;
+  .card-title {
+    font-weight: 900 !important;
   }
-  .card-reveal{
-    p{
-
-      color:#333!important;
+  .card-reveal {
+    p {
+      color: #333 !important;
     }
-    
   }
   .card {
     width: 300px;
@@ -293,9 +295,11 @@ iframe{
     bottom: 5%;
     transition: 0.3s;
     display: flex;
-
-    &:hover {
-      transform: translateY(-40%);
+    a {
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-40%);
+      }
     }
   }
 }
