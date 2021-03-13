@@ -1,0 +1,22 @@
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fullpage-wrapper{
+      @include flexCenter();
+      flex-direction: column;
+      .main-header{
+          min-height: 0vh;
+          .content{
+              h1{
+                  line-height: 1rem!important;;
+                padding:0.5rem;
+              }
+          }
+      }
+      .reactor-container{
+          margin: 0px;
+      }
+  }
