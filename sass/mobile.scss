@@ -25,3 +25,32 @@
           zoom:0.7;
       }
   }
+  .projects{
+      .main-projects{
+          display:flex;flex-direction: column;
+          .scrollDown2{
+              z-index:1;
+              bottom:-100px;
+          }
+      }
+      .heading{
+          top:-90px;
+          transform:translateX(24%)
+      }
+      .carousel{
+          zoom:0.5;
+          overflow:visible;
+      }
+      .descriptionOfProject{
+          div{
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              margin:1rem;
+              iframe, img{
+                  width: 300px !important;
+              }
+          }
+      }
+  }
