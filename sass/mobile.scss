@@ -54,3 +54,38 @@
           }
       }
   }
+  .skills{
+      padding-top:150px;
+      .tabbed-component__list{
+          flex-direction: column;
+      }
+    .scrollDown3{
+        z-index:1;
+        bottom:-100px;
+    }
+    .cards{
+        display:flex;
+        flex-direction: column;
+    }
+    .tabbed-component__section{
+        
+        min-height:200vh;
+        h2{
+            line-height:normal;
+        }
+    }
+  }
+  .contactMe{
+      h1{
+          line-height:normal;
+          padding: 0;
+      }
+      form{
+          padding-bottom: 60px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+
+      }
+  }

@@ -79,4 +79,60 @@
 .projects .descriptionOfProject div iframe, .projects .descriptionOfProject div img {
   width: 300px !important;
 }
+
+.skills {
+  padding-top: 150px;
+}
+
+.skills .tabbed-component__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .scrollDown3 {
+  z-index: 1;
+  bottom: -100px;
+}
+
+.skills .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .tabbed-component__section {
+  min-height: 200vh;
+}
+
+.skills .tabbed-component__section h2 {
+  line-height: normal;
+}
+
+.contactMe h1 {
+  line-height: normal;
+  padding: 0;
+}
+
+.contactMe form {
+  padding-bottom: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=mobile.css.map */
