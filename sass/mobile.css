@@ -23,7 +23,13 @@
   padding: 0.5rem;
 }
 
+.fullpage-wrapper .main-header .content {
+  margin-right: 0px;
+  margin-top: 30px;
+}
+
 .fullpage-wrapper .reactor-container {
   margin: 0px;
+  zoom: 0.7;
 }
 /*# sourceMappingURL=mobile.css.map */
