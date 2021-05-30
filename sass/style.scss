@@ -268,7 +268,7 @@ iframe {
 .skills {
   @include flexCenter();
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-start;
   font-weight: 600;
   position: relative;
   .card-title {
