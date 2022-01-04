@@ -208,6 +208,7 @@
 .tabbed-component {
   width: 50rem;
   max-width: 100%;
+  min-height: 100vh;
   font-size: 1rem;
 }
 
@@ -674,9 +675,9 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-weight: 600;
   position: relative;
 }
