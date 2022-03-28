@@ -16,6 +16,7 @@
 
 .fullpage-wrapper .main-header {
   min-height: 0vh;
+  text-align: center;
 }
 
 .fullpage-wrapper .main-header .content h1 {
@@ -49,6 +50,7 @@
 }
 
 .projects .heading {
+  display: none;
   top: -90px;
   -webkit-transform: translateX(24%);
           transform: translateX(24%);
@@ -76,7 +78,8 @@
   margin: 1rem;
 }
 
-.projects .descriptionOfProject div iframe, .projects .descriptionOfProject div img {
+.projects .descriptionOfProject div iframe,
+.projects .descriptionOfProject div img {
   width: 300px !important;
 }
 

@@ -313,6 +313,7 @@ html {
 body {
   background: url("../images/black_bg.jpg") no-repeat center center/cover;
   min-height: 100vh;
+  overflow-x: hidden;
   background-attachment: fixed;
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -377,6 +378,8 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   cursor: pointer;
   bottom: 5%;
   -webkit-transition: 0.3s;
@@ -555,8 +558,10 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   cursor: pointer;
-  bottom: 0%;
+  bottom: -4%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   display: -webkit-box;
@@ -662,6 +667,7 @@ iframe {
 }
 
 .skills {
+  padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,6 +744,8 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   cursor: pointer;
   bottom: 5%;
   -webkit-transition: 0.3s;

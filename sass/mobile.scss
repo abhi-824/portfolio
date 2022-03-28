@@ -1,91 +1,92 @@
-
 @mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullpage-wrapper {
+  @include flexCenter();
+  flex-direction: column;
+  .main-header {
+    min-height: 0vh;
+    text-align: center;
+    .content {
+      h1 {
+        line-height: 1rem !important;
+        padding: 0.5rem;
+      }
+    }
+    .content {
+      margin-right: 0px;
+      margin-top: 30px;
+    }
+  }
+  .reactor-container {
+    margin: 0px;
+    zoom: 0.7;
+  }
+}
+.projects {
+  .main-projects {
     display: flex;
+    flex-direction: column;
+    .scrollDown2 {
+      z-index: 1;
+      bottom: -100px;
+    }
+  }
+  .heading {
+      display:none;
+    top: -90px;
+    transform: translateX(24%);
+  }
+  .carousel {
+    zoom: 0.5;
+    overflow: visible;
+  }
+  .descriptionOfProject {
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 1rem;
+      iframe,
+      img {
+        width: 300px !important;
+      }
+    }
+  }
+}
+.skills {
+  padding-top: 150px;
+  .tabbed-component__list {
+    flex-direction: column;
+  }
+  .scrollDown3 {
+    z-index: 1;
+    bottom: -100px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabbed-component__section {
+    min-height: 200vh;
+    h2 {
+      line-height: normal;
+    }
+  }
+}
+.contactMe {
+  h1 {
+    line-height: normal;
+    padding: 0;
+  }
+  form {
+    padding-bottom: 60px;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
   }
-  .fullpage-wrapper{
-      @include flexCenter();
-      flex-direction: column;
-      .main-header{
-          min-height: 0vh;
-          .content{
-              h1{
-                  line-height: 1rem!important;;
-                padding:0.5rem;
-              }
-          }
-          .content{
-              margin-right:0px;
-              margin-top:30px;
-          }
-      }
-      .reactor-container{
-          margin: 0px;
-          zoom:0.7;
-      }
-  }
-  .projects{
-      .main-projects{
-          display:flex;flex-direction: column;
-          .scrollDown2{
-              z-index:1;
-              bottom:-100px;
-          }
-      }
-      .heading{
-          top:-90px;
-          transform:translateX(24%)
-      }
-      .carousel{
-          zoom:0.5;
-          overflow:visible;
-      }
-      .descriptionOfProject{
-          div{
-              display:flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-              margin:1rem;
-              iframe, img{
-                  width: 300px !important;
-              }
-          }
-      }
-  }
-  .skills{
-      padding-top:150px;
-      .tabbed-component__list{
-          flex-direction: column;
-      }
-    .scrollDown3{
-        z-index:1;
-        bottom:-100px;
-    }
-    .cards{
-        display:flex;
-        flex-direction: column;
-    }
-    .tabbed-component__section{
-        
-        min-height:200vh;
-        h2{
-            line-height:normal;
-        }
-    }
-  }
-  .contactMe{
-      h1{
-          line-height:normal;
-          padding: 0;
-      }
-      form{
-          padding-bottom: 60px;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-
-      }
-  }
+}
